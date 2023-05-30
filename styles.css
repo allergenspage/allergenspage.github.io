@@ -1,18 +1,18 @@
 @font-face {
   font-family: "font-reg";
-  src: url("./IBMPlexSansHebrew-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/IBMPlexSansHebrew-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "font-semi-bold";
-  src: url("./IBMPlexSansHebrew-SemiBold.ttf") format("truetype");
+  src: url("./assets/fonts/IBMPlexSansHebrew-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "font-bold";
-  src: url("./IBMPlexSansHebrew-Bold.ttf") format("truetype");
+  src: url("./assets/fonts/IBMPlexSansHebrew-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 55px 50px;
+  padding: 55px 60px;
 }
 
 .scrolling-text {
@@ -56,7 +56,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   font-size: 20px;
+}
+.main-con .text-justify {
+  text-align: justify;
 }
 .main-con .text-bold {
   font-family: "font-bold", fallback, sans-serif;
@@ -72,6 +76,7 @@ body {
 .main-con .titles-con h2 {
   font-size: 27px;
   font-weight: 500;
+  line-height: 40px;
 }
 .main-con .content-con {
   text-align: right;
@@ -87,11 +92,12 @@ body {
   font-size: 18px;
 }
 .main-con .content-con .food-wheel-image {
-  background-image: url(./foodWheel.png);
+  background-image: url(./assets/images/foodWheel.png);
   background-position: center;
   background-repeat: no-repeat;
   height: 500px;
   width: auto;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
