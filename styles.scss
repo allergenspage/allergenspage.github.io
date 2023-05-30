@@ -28,7 +28,7 @@ body {
 
 .scrolling-text {
     opacity: 0.4;
-    transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s;
 
     &.show-up {
         opacity: 1;
