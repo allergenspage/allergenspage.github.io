@@ -57,7 +57,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-size: 26px;
+  font-size: 30px;
 }
 .main-con .text-justify {
   text-align: justify;
@@ -67,16 +67,15 @@ body {
 }
 .main-con .titles-con {
   text-align: center;
+  margin-bottom: 10px;
 }
 .main-con .titles-con h1 {
   font-size: 50px;
   line-height: 60px;
-  font-weight: 700;
 }
 .main-con .titles-con h2 {
-  font-size: 27px;
-  font-weight: 500;
-  line-height: 40px;
+  font-size: 40px;
+  line-height: 60px;
 }
 .main-con .content-con {
   text-align: right;
