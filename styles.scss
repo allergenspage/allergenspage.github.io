@@ -60,7 +60,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    font-size: 30px;
+    font-size: 20px;
 
     .text-justify {
         text-align: justify;
@@ -75,12 +75,13 @@ body {
         margin-bottom: 10px;
 
         h1 {
-            font-size: 50px;
-            line-height: 60px;
+            font-size: 80px;
+            line-height: 100px;
+            color: #39969c;
         }
         
         h2 {
-            font-size: 40px;
+            font-size: 35px;
             line-height: 60px;
         }
     }
@@ -89,15 +90,20 @@ body {
         text-align: right;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
+
+        h3 {
+            margin-bottom: none;
+        }
 
         .text-title-con {
-            font-size: 25px;
-            // font-family: 'font-semi-bold', fallback, sans-serif;
+            font-size: 43px;
+            font-weight: 700;
+            color: #39969c;
         }
         
         .text-con {
-            font-size: 18px;
+            font-size: 30px;
         }
 
         .food-wheel-image {
