@@ -63,7 +63,7 @@ body {
   text-align: justify;
 }
 .main-con .text-bold {
-  font-family: "font-bold", fallback, sans-serif;
+  font-family: "font-semi-bold", fallback, sans-serif;
 }
 .main-con .titles-con {
   text-align: center;
