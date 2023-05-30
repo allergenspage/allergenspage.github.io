@@ -16,8 +16,20 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "heebo-reg";
+  src: url("./assets/fonts/Heebo-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "heebo-bold";
+  src: url("./assets/fonts/Heebo-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "heebo-reg", Fallback, sans-serif;
   direction: rtl;
 }
 
@@ -57,12 +69,13 @@ body {
   align-items: center;
   gap: 20px;
   font-size: 20px;
+  font-family: heebo-reg;
 }
 .main-con .text-justify {
   text-align: justify;
 }
 .main-con .text-bold {
-  font-weight: 700;
+  font-family: "heebo-bold", Fallback, sans-serif;
 }
 .main-con .titles-con {
   text-align: center;
@@ -89,8 +102,15 @@ body {
 .main-con .content-con .text-title-con {
   font-size: 43px;
   font-weight: 700;
-  color: #39969c;
   margin-top: 30px;
+  transform: translateY(-26.9865%);
+  opacity: 1;
+  background-color: #39969c;
+  color: white;
+  padding: 15px 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
 .main-con .content-con .text-con {
   font-size: 30px;
@@ -98,8 +118,9 @@ body {
 .main-con .content-con .food-wheel-image {
   background-image: url(./assets/images/foodWheel.png);
   background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 800px;
   width: auto;
   margin: 40px 0;
 }
