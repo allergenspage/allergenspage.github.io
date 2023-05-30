@@ -34,7 +34,7 @@
 }
 
 * { 
-    font-family: 'heebo-reg', Fallback, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     direction: rtl;
 }
 
@@ -82,9 +82,7 @@ body {
     }
     
     .text-bold {
-        // font-weight: 700;
-        font-family: 'heebo-bold', Fallback, sans-serif;
-
+        font-weight: 700;
     }
 
     .titles-con {
