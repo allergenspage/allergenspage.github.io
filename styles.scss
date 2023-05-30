@@ -1,25 +1,4 @@
 @font-face {
-    font-family: 'font-reg';
-    src: url('./assets/fonts/IBMPlexSansHebrew-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'font-semi-bold';
-    src: url('./assets/fonts/IBMPlexSansHebrew-SemiBold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'font-bold';
-    src: url('./assets/fonts/IBMPlexSansHebrew-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'heebo-reg';
     src: url('./assets/fonts/Heebo-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -36,37 +15,27 @@
 * { 
     font-family: Arial, Helvetica, sans-serif;
     direction: rtl;
+    box-sizing: border-box;
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
     padding: 55px 60px;
 }
 
 .scrolling-text {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-    animation: floatIn 1.5s ease-in-out forwards;
-    
-    @keyframes floatIn {
-        0% {
-            opacity: 0;
-            transform: translateY(50px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    opacity: 0.4;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateY(20px);
+
+    &.show-up {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
-
-.show {
-    opacity: 1;
-    transform: translateY(0);
-}  
 
 .main-con {
     display: flex;
@@ -75,7 +44,6 @@ body {
     align-items: center;
     gap: 20px;
     font-size: 20px;
-    font-family: heebo-reg;
 
     .text-justify {
         text-align: justify;
@@ -114,16 +82,13 @@ body {
         .text-title-con {
             font-size: 43px;
             font-weight: 700;
-            // color: #39969c;
-            margin-top: 30px;
-            transform: translateY(-26.9865%);
             opacity: 1;
             background-color: #39969c;
             color: white;
             padding: 15px 10px;
             text-align: center;
-            margin-bottom: 10px;
             border-radius: 10px;
+            margin: 60px 0 20px;
         }
         
         .text-con {

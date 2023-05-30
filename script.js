@@ -1,25 +1,26 @@
 document.addEventListener("DOMContentLoaded", function() {
-    console.log('hey');
-    var scrollingTextElements = document.querySelectorAll(".scrolling-text");
-  
+    
+    var sections = document.querySelectorAll(".scrolling-text");
+
     function handleScroll() {
-      var windowHeight = window.innerHeight;
-      var scrollPosition = window.pageYOffset;
-  
-      scrollingTextElements.forEach(function(element) {
-        var elementPosition = element.getBoundingClientRect().top;
-  
-        if (elementPosition < windowHeight + scrollPosition) {
-          var scrollPercentage = (windowHeight + scrollPosition - elementPosition) / (windowHeight + element.offsetHeight);
-          var translateY = (1 - scrollPercentage) * 100;
-  
-          element.style.transform = "translateY(" + translateY + "%)";
-          element.style.opacity = 1;
+      sections.forEach( sec => {
+        if (isElementInViewport(sec)) {
+          sec.classList.add('show-up');
+        } else {
+          sec.classList.remove('show-up');
         }
       });
     }
+
+    function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+      );
+    }
   
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Handle initial scroll position
+    handleScroll();
   });
   
