@@ -17,7 +17,6 @@
   font-style: normal;
 }
 * {
-  font-family: "font-reg", fallback, sans-serif;
   line-height: 50px;
   direction: rtl;
 }
@@ -85,7 +84,6 @@ body {
 }
 .main-con .content-con .text-title-con {
   font-size: 25px;
-  font-family: "font-semi-bold", fallback, sans-serif;
 }
 .main-con .content-con .text-con {
   font-size: 18px;
