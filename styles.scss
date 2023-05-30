@@ -90,7 +90,7 @@ body {
         text-align: right;
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 5px;
 
         h3 {
             margin-bottom: none;
@@ -100,6 +100,7 @@ body {
             font-size: 43px;
             font-weight: 700;
             color: #39969c;
+            margin-top: 30px;
         }
         
         .text-con {
@@ -112,7 +113,23 @@ body {
             background-repeat: no-repeat;
             height: 500px;
             width: auto;
-            margin-bottom: 20px;
+            margin: 40px 0;
+        }
+
+        .list-con ul li {
+            margin: 11px 0;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        a {
+            color: #256569;
+        }
+
+        .link-text {
+            margin-top: 20px;
         }
     }
 }

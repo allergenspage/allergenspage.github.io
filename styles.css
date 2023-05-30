@@ -81,7 +81,7 @@ body {
   text-align: right;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 5px;
 }
 .main-con .content-con h3 {
   margin-bottom: none;
@@ -90,6 +90,7 @@ body {
   font-size: 43px;
   font-weight: 700;
   color: #39969c;
+  margin-top: 30px;
 }
 .main-con .content-con .text-con {
   font-size: 30px;
@@ -100,7 +101,19 @@ body {
   background-repeat: no-repeat;
   height: 500px;
   width: auto;
-  margin-bottom: 20px;
+  margin: 40px 0;
+}
+.main-con .content-con .list-con ul li {
+  margin: 11px 0;
+}
+.main-con .content-con .list-con ul li:first-child {
+  margin-top: 0;
+}
+.main-con .content-con a {
+  color: #256569;
+}
+.main-con .content-con .link-text {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
