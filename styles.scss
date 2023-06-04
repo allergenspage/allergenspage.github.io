@@ -45,22 +45,22 @@ body {
         text-align: center;
         margin-bottom: 10px;
 
-
         h1 {
-            font-size: 85px;
+            font-size: 90px;
             line-height: 130px;
             color: #39969c;
-            // font-family: 'heebo-bold', Fallback, sans-serif;
-            font-family: 'varela', Fallback, sans-serif;
+            font-family: 'heebo-reg', Fallback, sans-serif;
         }
         
         h2 {
-            font-size: 50px;
+            font-size: 60px;
             line-height: 80px;
-            font-family: 'varela', Fallback, sans-serif;
+            font-family: 'heebo-reg', Fallback, sans-serif;
+
+            
             .bold-text {
-                font-size: 60px;
-                font-family: 'varela', Fallback, sans-serif;
+                font-size: 70px;
+                font-family: 'heebo-reg', Fallback, sans-serif;
             }
         }
     }
