@@ -35,7 +35,7 @@ body {
     line-height: 70px;
 
     .text-bold {
-        font-weight: 700;
+        font-family: 'heebo-Bold', Fallback, sans-serif;
     }
 
     .titles-con {
@@ -47,7 +47,7 @@ body {
             font-size: 90px;
             line-height: 130px;
             color: #39969c;
-            font-family: 'heebo-reg', Fallback, sans-serif;
+            font-family: 'heebo-Bold', Fallback, sans-serif;
         }
         
         h2 {
