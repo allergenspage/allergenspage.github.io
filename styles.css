@@ -22,14 +22,7 @@ body {
   align-items: center;
   overflow-x: hidden;
   padding: 55px 60px;
-}
-
-.scrolling-text {
-  opacity: 0.4;
-  transition: opacity 0.05s;
-}
-.scrolling-text.show-up {
-  opacity: 1;
+  font-family: "heebo-reg", Fallback, sans-serif;
 }
 
 .main-con {
@@ -38,7 +31,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-size: 20px;
+  line-height: 70px;
 }
 .main-con .text-justify {
   text-align: justify;
@@ -51,13 +44,23 @@ body {
   margin-bottom: 10px;
 }
 .main-con .titles-con h1 {
-  font-size: 80px;
+  font-size: 90px;
   line-height: 100px;
   color: #39969c;
 }
 .main-con .titles-con h2 {
-  font-size: 35px;
-  line-height: 60px;
+  font-size: 50px;
+  line-height: 80px;
+}
+.main-con .titles-con .text-size-buttons-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.main-con .titles-con .text-size-buttons-con button {
+  height: 80px;
+  width: 120px;
+  font-size: 50px;
 }
 .main-con .content-con {
   text-align: right;
@@ -69,18 +72,18 @@ body {
   margin-bottom: none;
 }
 .main-con .content-con .text-title-con {
-  font-size: 43px;
+  font-size: 70px;
   font-weight: 700;
   opacity: 1;
   background-color: #39969c;
   color: white;
-  padding: 15px 10px;
+  padding: 30px 20px;
   text-align: center;
   border-radius: 10px;
-  margin: 60px 0 20px;
+  margin: 100px 0 60px;
 }
 .main-con .content-con .text-con {
-  font-size: 30px;
+  font-size: 50px;
 }
 .main-con .content-con .food-wheel-image {
   background-image: url(./assets/images/foodWheel.png);
@@ -92,10 +95,13 @@ body {
   margin: 40px 0;
 }
 .main-con .content-con .list-con ul li {
-  margin: 11px 0;
+  margin: 30px 0;
 }
 .main-con .content-con .list-con ul li:first-child {
   margin-top: 0;
+}
+.main-con .content-con .list-con ul li:last-child {
+  margin-bottom: 0;
 }
 .main-con .content-con a {
   color: #256569;
