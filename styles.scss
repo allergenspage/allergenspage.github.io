@@ -35,7 +35,7 @@ body {
     line-height: 70px;
 
     .text-bold {
-        font-family: 'heebo-Bold', Fallback, sans-serif;
+        font-weight: 700;
     }
 
     .titles-con {
@@ -44,16 +44,16 @@ body {
 
 
         h1 {
-            font-size: 90px;
+            font-size: 85px;
             line-height: 130px;
             color: #39969c;
-            font-family: 'heebo-Bold', Fallback, sans-serif;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         
         h2 {
             font-size: 60px;
             line-height: 80px;
-            font-family: 'heebo-reg', Fallback, sans-serif;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
         .text-size-buttons-con {
@@ -104,6 +104,10 @@ body {
         .text-con {
             font-size: 50px;
             font-family: 'heebo-reg', Fallback, sans-serif;
+            
+            .bold-text {
+                font-family: 'heebo-bold', Fallback, sans-serif;
+            }
         }
 
         .food-wheel-image {
