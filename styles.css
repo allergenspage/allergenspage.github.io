@@ -32,9 +32,6 @@ body {
   gap: 20px;
   line-height: 70px;
 }
-.main-con .text-justify {
-  text-align: justify;
-}
 .main-con .text-bold {
   font-weight: 700;
 }
@@ -46,7 +43,7 @@ body {
   font-size: 90px;
   line-height: 130px;
   color: #39969c;
-  font-family: "heebo-bold", Fallback, sans-serif;
+  font-family: "heebo-reg", Fallback, sans-serif;
 }
 .main-con .titles-con h2 {
   font-size: 60px;
