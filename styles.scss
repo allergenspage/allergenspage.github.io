@@ -16,6 +16,17 @@
     font-style: normal;
 }
 
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 * { 
     font-family: Arial, Helvetica, sans-serif;
     direction: rtl;
@@ -37,6 +48,15 @@ body {
     align-items: center;
     gap: 20px;
     line-height: 70px;
+
+    .section-scroll {
+        opacity: 0.6;
+    }
+    
+    .show {
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
+    }
 
     .titles-con {
         text-align: center;
