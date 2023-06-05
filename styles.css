@@ -42,7 +42,7 @@ body {
 .main-con .titles-con h1 {
   font-size: 90px;
   line-height: 130px;
-  color: #39969c;
+  color: #1b794d;
   font-family: "heebo-reg", Fallback, sans-serif;
 }
 .main-con .titles-con h2 {
@@ -66,7 +66,7 @@ body {
 .main-con .content-con .text-title-con {
   font-size: 70px;
   opacity: 1;
-  background-color: #39969c;
+  background-color: #1b794d;
   color: white;
   padding: 30px 60px;
   text-align: center;
@@ -90,9 +90,17 @@ body {
   width: auto;
   margin: 40px 0;
 }
+.main-con .content-con ul {
+  list-style-type: none;
+}
 .main-con .content-con .list-con ul li {
   font-family: "heebo-reg", Fallback, sans-serif;
   margin: 30px 0;
+  padding-right: 90px;
+  background-image: url(./assets/images/leaf-bullet.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 70px;
 }
 .main-con .content-con .list-con ul li:first-child {
   margin-top: 0;
